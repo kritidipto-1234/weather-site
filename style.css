@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input{
+    width:250px;
+    height:35px;
+    background-color: rgb(156, 225, 224);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(62, 113, 114);
+    border-radius: 15px;
+}
+body{
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.app div{
+    padding: 10px;
+    color: rgb(112, 206, 209);
+} 
+
+
+.place{
+    font-size: 30px;
+}
+.temp{
+    font-size: 50px;
+}
+.temp::after{
+    content: ' \2103';
+}
+
+.humidity{
+    font-size: 50px;
+}
+.humidity::after{
+    content: ' %';
+}
+
+.weather{
+    font-size: 30px;
+}
+
+.go{
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-left:20px;
+    border:5px solid rgb(129, 201, 201);
+    border-radius: 50%;
+    width:50px;
+    transition: all 0.3s;
+}
+
+.go:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}

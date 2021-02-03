@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./skycons.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div><input type="text" placeholder="Enter a valid city name "> <span class="go">GO</span></div>
+        <div class="place"><span class="city">----</span> , <span class="country">-------</span> , <span class="date">DD-MM-20XX</span></div>
+        <div class="temp">-- </div>
+        <div class="humidity">-- </div>
+        <div style="display: flex;">
+            <div class="weather">-----</div>
+            <canvas id="icon1" width="128" height="128"></canvas>
+        </div>
+    </div>
+</body>
+</html>
