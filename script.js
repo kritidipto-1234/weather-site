@@ -8,6 +8,8 @@ const goBTN=document.querySelector('.go');
 const input=document.querySelector('input');
 const icon=document.querySelector('icon1');
 
+//----------------------------------------------------------------------
+
 function getLocationCoords()//returns a promise of latitudes and longitudes
 {
     if (!navigator.geolocation)
