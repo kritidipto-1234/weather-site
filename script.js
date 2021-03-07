@@ -52,7 +52,7 @@ window.addEventListener('load',async function()
         alert(e.message);
     }
     const d=new Date();
-    date.textContent=`${d.getDate()}-${d.getMonth()}-${d.getFullYear()}`;
+    date.textContent=`${d.getDate()}-${d.getMonth()+1}-${d.getFullYear()}`;
 });
 
 goBTN.addEventListener('click',async function()
@@ -80,7 +80,6 @@ function setIcon(weatherData)
         type=weatherData.weather[0].main+" day";
     else
         type=weatherData.weather[0].main+" night";
-    console.log(weatherData);
 
     if (weatherData.weather[0].main=="Mist" || weatherData.weather[0].main=="Smoke" || weatherData.weather[0].main=="Fog" || weatherData.weather[0].main=="Haze")
         type="fog";
